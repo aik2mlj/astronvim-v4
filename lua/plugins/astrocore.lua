@@ -25,7 +25,7 @@ return {
     -- vim options can be configured here
     options = {
       opt = { -- vim.opt.<key>
-        relativenumber = true, -- sets vim.opt.relativenumber
+        relativenumber = false, -- sets vim.opt.relativenumber
         number = true, -- sets vim.opt.number
         spell = false, -- sets vim.opt.spell
         signcolumn = "auto", -- sets vim.opt.signcolumn to auto
@@ -36,6 +36,7 @@ return {
         shiftwidth = 4,
         scrolloff = 15,
         guifont = "FiraCode Nerd Font:h11",
+        conceallevel = 2,
       },
       g = { -- vim.g.<key>
         -- configure global vim variables (vim.g)
@@ -46,7 +47,7 @@ return {
         typst_conceal = true,
 
         -- neovide options
-        neovide_transparency = 0.8,
+        neovide_transparency = 0.9,
         neovide_hide_mouse_when_typing = true,
         neovide_theme = "dark",
       },
